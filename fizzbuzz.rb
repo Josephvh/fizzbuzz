@@ -1,19 +1,16 @@
 #!/usr/bin/env ruby
 
 def fizzbuzz(num)
-        if num % 3 == 0 && num % 5 == 0
-                print "fizzbuzz"
-
-        elsif num % 3 == 0
-                print "fizz"
-
-        elsif num % 5 == 0
-                print "buzz"
-        else
-                print "No fizz, no buzz, no fizzbuzz"
-        end
+	if num % 3 == 0 && num % 5 == 0
+		return "Fizzbuzz"
+	elsif num % 3 == 0
+		return "Fizz"
+	elsif num % 5 == 0
+		return "Buzz"
+	else 
+		return "No fizz, no buzz, no fizzbuzz"
+	end
 end
 
-puts "What's your number? "
-num = gets.chomp.to_i
+num = rand(1..50)
 puts fizzbuzz(num)
